@@ -24,3 +24,22 @@
 
 # Beast mode++ challenge:
 # Turn this program into a loop that will repeat these tasks until they type 'stop'
+answer = ""
+while answer != "stop"
+    puts "What is your name?"
+    name = gets.chomp
+    puts "Hi #{name}! How old are you?"
+    age = gets.chomp
+    puts "Wow! you are #{age} years old. Congratulations!"
+    etd = 100 - age.to_i
+    puts "#{name}, in #{etd} years you will be 100"
+    puts "Again? 'stop' to exit"
+    
+    answer = gets.chomp
+    if answer != "stop"
+        system "clear"
+        print "Sure, "
+	    elsif answer == "stop"
+	    puts "Good-bye"	
+    end
+end
